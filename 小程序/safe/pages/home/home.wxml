@@ -1,0 +1,54 @@
+<!--index.wxml-->
+<!--pages/homePage/homePage.wxml-->
+<swiper class='homeHeader' indicator-dots autoplay interval='3000' circular skip-hidden-item-layout>
+     <swiper-item class='swiper' wx:for="{{homeAdvertises}}">
+          <image src='{{item.imgSrc}}' mode='scaleToFill' class='swiper' bindtap='homeAdvertisesTap' data-index='{{index}}'></image>
+     </swiper-item>
+</swiper>
+
+<view class='filterContent'>
+     <view class='filterView'>
+          <view class='location'>
+              <text class='caption' >车险分期</text>
+          </view>
+          <view class='location'>
+               <image src='../../res/images/ic_city_location.png' mode='aspectFit' class='icon' bindtap='getLocalLocation' />
+               <text class='caption' bindtap='getLocalLocation'>行驶区域：</text>
+               <text class='city' bindtap='selectCity'>{{location}}</text>
+               <image src='../../res/images/ic_right_arrow.png' mode='widthFix' class='icon' bindtap='selectCity' />
+          </view>
+          <view class='location'>
+                <image src='../../res/images/ic_filter.png' mode='widthFix' class='icon' />
+                <text class='caption' >汽车牌照</text>
+                <view></view>
+                <input style='margin-left:30rpx;border: 1rpx solid #eee;'></input>
+          </view>
+
+          <view class='location'>
+                <image src='../../res/images/ic_filter.png' mode='widthFix' class='icon' />
+                <text class='caption' >车主姓名</text>
+                <view></view>
+                <input style='margin-left:30rpx;border: 1rpx solid #eee;'></input>
+          </view>
+          <view class='location'>
+                <image src='../../res/images/ic_filter.png' mode='widthFix' class='icon' />
+                <text class='caption' >身份证号</text>
+                <view></view>
+                <input style='margin-left:30rpx;border: 1rpx solid #eee;'></input>
+          </view>
+          <view class='location'>
+                <image src='../../res/images/ic_filter.png' mode='widthFix' class='icon' />
+                <text class='caption' >电话号码</text>
+                <view></view>
+                <input style='margin-left:30rpx;border: 1rpx solid #eee;'></input>
+          </view>
+          <!-- 日期end  -->
+
+          <view class='commonBtn' hover-class='commonBtnHover' bindtap='searchEvent' hover-stay-time='100'>车险分期</view>
+          <view class='service' style='display:flex;flex-direction: row;align-items:center'>
+            <checkbox style='padding:0 0 20rpx 20rpx;'></checkbox>
+            <text style='font-size: 24rpx;color: #999;'>我已经理解并接收</text>
+            <text style='font-size: 24rpx;color: #fd7a33;' bindtap="bindAgreement">《车险分期服务协议》</text>
+          </view>
+     </view>
+</view>

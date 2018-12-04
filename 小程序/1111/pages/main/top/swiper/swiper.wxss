@@ -1,0 +1,265 @@
+@import "/common/lib/weui.wxss";
+
+button:last-child{
+  margin-bottom: 0;
+}
+.page-section-title{
+  padding: 0;
+}
+.swiper{
+  height: 300rpx;
+}
+
+.swiper-item{
+  display: block;
+  height: 300rpx;
+}
+.page-section-title{
+  margin-top: 0rpx;
+  position: relative;
+}
+.info{
+  position: absolute;
+  right: 0;
+  color: #353535;
+  font-size: 30rpx;
+}
+.page-foot{
+  margin-top: 50rpx;
+}
+.demo-text-1{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #1AAD19;
+  color: #FFFFFF;
+  font-size: 36rpx;
+}
+.demo-text-1:before{
+  content: 'A';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.demo-text-2{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #2782D7;
+  color: #FFFFFF;
+  font-size: 36rpx;
+}
+.demo-text-2:before{
+  content: 'B';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.demo-text-3{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #F1F1F1;
+  color: #353535;
+  font-size: 36rpx;
+}
+.demo-text-3:before{
+  content: 'C';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.demo-text-4{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 0, 0);
+  color: #353535;
+  font-size: 36rpx;
+}
+.demo-text-4:before{
+  content: 'D';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.v1{
+  position:absolute;
+  top:290rpx;
+  display:flex;
+  flex-direction:column;
+  box-sizing:border-box;
+  height:81px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.v2{
+  top:290rpx;
+  display:flex;
+  flex-direction:column;
+  box-sizing:border-box;
+  box-shadow:0rpx 8rpx 20rpx #bbb;
+  border-radius:14rpx;
+  background:rgb(255, 196, 0);
+  height:81px;
+  width: 347px;
+}
+
+.imgContent{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #1AAD19;
+  width: 100%;
+  margin: 20;
+  height: 200rpx;
+}
+
+.imgContent view{
+  width: 300rpx;
+  height: 200rpx;
+  background-color: rgba(252, 115, 2, 0.548);
+}
+
+/* 键盘 */
+.password-input {
+    display: flex;
+    width: 660rpx;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+    margin-top: 50rpx;
+    background-color: #fff;
+    border-radius: 3px;
+}
+ 
+.password-input view {
+    width: 110rpx;
+    height: 80rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-right: 1px solid #ccc;
+}
+ 
+.password-input view:nth-child(6) {
+    border-right: none;
+}
+ 
+.password-input view text {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #333;
+}
+ 
+.tips {
+    font-size: 28rpx;
+    text-align: center;
+    margin-top: 5px;
+}
+ 
+.tips text {
+    color: #c30;
+}
+ 
+.keyboard {
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    margin-top: 50rpx;
+}
+ 
+.keyboard .number {
+    display: flex;
+    width: 570rpx;
+    flex-wrap: wrap;
+}
+ 
+.keyboard .number view {
+    width: 190rpx;
+    height: 120rpx;
+    line-height: 120rpx;
+    text-align: center;
+    font-size: 46rpx;
+    font-weight: bold;
+    box-sizing: border-box;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+ 
+.keyboard .ctr-btn {
+    width: 180rpx;
+}
+ 
+.keyboard .ctr-btn view {
+    height: 240rpx;
+    line-height: 240rpx;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+}
+ 
+.keyboard .ctr-btn view .iconfont {
+    font-size: 44rpx !important;
+    color: #c30;
+}
+ 
+.keyboard .ctr-btn view:nth-child(2) {
+    font-size: 46rpx;
+    color: #c30;
+}
+ 
+.keyboard .active {
+    background-color: #e4e7ed;
+}
+ 
+.activity {
+    background-color: #fff;
+    padding: 25rpx 20rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24rpx;
+    border-bottom: 1px solid #f6f6f6;
+}
+ 
+.activity.activity-item {
+    font-size: 26rpx;
+}
+ 
+.arrows-right {
+    width: 30rpx;
+    height: 30rpx;
+}
+ 
+.arrows-right.active {
+    transform: rotate(270deg);
+}
+
+.keyboard1{
+  padding: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+  align-items:initial;
+  background-color: #ddd;
+}
+
+.keyboard1 view{
+  background-color:white;
+  border-radius: 5rpx;
+  width: 70rpx;
+  height: 80rpx;
+  display: flex;
+  margin: 5rpx;
+  justify-content: center;
+  align-items: center;
+}
+/* 键盘结束 */

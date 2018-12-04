@@ -1,0 +1,14 @@
+<view class="menu-wrp">
+  <!--设定一个item项后，遍历输出-->
+  <view class="menu-list" wx:for="{{menu.imgUrls}}">
+    <image class="menu-img" src="{{item}}" />
+    <view class="menu-desc">{{menu.descs[index]}}</view>
+  </view>
+
+  <view class='a'>
+    <image class='a1' src='http://gw.alicdn.com/tps/TB1RN0HMFXXXXXNXpXXXXXXXXXX-183-129.png?imgtag=avatar'></image>
+    <image class='a2' src='http://gw.alicdn.com/tps/TB1exaOLVXXXXXeXFXXXXXXXXXX-183-129.png?imgtag=avatar'></image>
+    <image class='a3' src='http://img.alicdn.com/tps/TB1GzMJLXXXXXXoXXXXXXXXXXXX-183-129.png'></image>
+    <image class='a4' src='http://gw.alicdn.com/tps/i3/TB1Ewu2KVXXXXXkapXXN4ls0XXX-183-129.png'></image>
+  </view>
+</view>

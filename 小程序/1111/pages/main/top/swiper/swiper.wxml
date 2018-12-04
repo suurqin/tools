@@ -1,0 +1,170 @@
+<import src="../../../common/head.wxml" />
+<import src="../../../common/foot.wxml" />
+
+<view class="container">
+  <template is="head" data="{{title: 'swiper'}}"/>
+
+  <view class="page-body">
+    <view class="page-section page-section-spacing swiper">
+      <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item {{item}}"></view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+  <view class="imgContent">
+    <view class='img1' >
+        <text bindtap='passwordInputHidden' style ='color:blue'>黑▼</text>
+    </view>
+    <view class='img2'></view>
+  </view>
+
+
+</view>
+    <!-- 密码框带键盘 -->
+<action-sheet hidden="{{passwordInputHidden}}" bindchange="passwordInputHidden">
+    <!-- <view class='password-input'>
+        <view>
+            <text style="display:{{inputPassword[0]?'':'none'}}"></text>
+        </view>
+        <view>
+            <text style="display:{{inputPassword[1]?'':'none'}}"></text>
+        </view>
+        <view>
+            <text style="display:{{inputPassword[2]?'':'none'}}"></text>
+        </view>
+        <view>
+            <text style="display:{{inputPassword[3]?'':'none'}}"></text>
+        </view>
+        <view>
+            <text style="display:{{inputPassword[4]?'':'none'}}"></text>
+        </view>
+        <view>
+            <text style="display:{{inputPassword[5]?'':'none'}}"></text>
+        </view>
+    </view>
+    <view class='tips'>请输入支付密码(
+        <text>-￥100</text>)</view> -->
+    <!--<view class='keyboard1'>
+         <view class='left number'>
+            <view data-key="1" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>1</view>
+            <view data-key="2" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>2</view>
+            <view data-key="3" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>3</view>
+            <view data-key="4" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>4</view>
+            <view data-key="5" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>5</view>
+            <view data-key="6" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>6</view>
+            <view data-key="7" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>7</view>
+            <view data-key="8" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>8</view>
+            <view data-key="9" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>9</view>
+            <view data-key="X" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>X</view>
+            <view data-key="0" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>0</view>
+            <view data-key="." hover-class='active' hover-stay-time='100' bindtap='inputPassword'>.</view>
+        </view> -->
+        <!-- <view class='right ctr-btn'>
+            <view class='ctr-btn-item' hover-class='active' hover-stay-time='100' bindtap='clear'>
+                <label class='iconfont icon-shanchu'></label>
+            </view>
+            <view class='ctr-btn-item' hover-class='active' hover-stay-time='100' bindtap='passwordInputHidden'>取消</view>
+        </view> 
+    </view>-->
+
+    <view class='keyboard1'>
+      <view>
+        <text class='area' bindtap='selectArea' style ='color:blue'>京</text>
+      </view>
+      <view>
+        <text class='area' bindtap='selectArea' style ='color:blue'>津</text>
+      </view>
+      <view>
+        <text class='area' bindtap='selectArea' style ='color:blue'>沪</text>
+      </view>
+      <view>
+        <text class='area' bindtap='selectArea' style ='color:blue'>渝</text>
+      </view>
+      <view>
+        <text class='area' bindtap='selectArea' style ='color:blue'>蒙</text>
+      </view>
+      <view>
+        <text class='area' bindtap='selectArea' style ='color:blue'>新</text>
+      </view>
+      <view>
+        <text class='area' bindtap='selectArea' style ='color:blue'>藏</text>
+      </view>
+      <view>
+        <text class='area' bindtap='selectArea' style ='color:blue'>宁</text>
+      </view>
+      <view>
+        <text class='area' bindtap='selectArea' style ='color:blue'>桂</text>
+      </view>
+      <view>
+        <text class='area' bindtap='selectArea' style ='color:blue'>黑</text>
+      </view>
+      <view>
+        <text class='area' bindtap='selectArea' style ='color:blue'>吉</text>
+      </view>
+      <view>
+        <text class='area' bindtap='selectArea' style ='color:blue'>辽</text>
+      </view>
+      <view>
+        <text class='area' bindtap='selectArea' style ='color:blue'>晋</text>
+      </view>
+      <view>
+        <text class='area' bindtap='selectArea' style ='color:blue'>冀</text>
+      </view>
+      <view>
+        <text class='area' bindtap='selectArea' style ='color:blue'>青</text>
+      </view>
+      <view>
+        <text class='area' bindtap='selectArea' style ='color:blue'>鲁</text>
+      </view>
+      <view>
+        <text class='area' bindtap='selectArea' style ='color:blue'>豫</text>
+      </view>
+      <view>
+        <text class='area' bindtap='selectArea' style ='color:blue'>苏</text>
+      </view>
+      <view>
+        <text class='area' bindtap='selectArea' style ='color:blue'>皖</text>
+      </view>
+      <view>
+        <text class='area' bindtap='selectArea' style ='color:blue'>浙</text>
+      </view>
+      <view>
+        <text class='area' bindtap='selectArea' style ='color:blue'>闽</text>
+      </view>
+      <view>
+        <text class='area' bindtap='selectArea' style ='color:blue'>赣</text>
+      </view>
+      <view>
+        <text class='area' bindtap='selectArea' style ='color:blue'>湘</text>
+      </view>
+      <view>
+        <text class='area' bindtap='selectArea' style ='color:blue'>鄂</text>
+      </view>
+      <view>
+        <text class='area' bindtap='selectArea' style ='color:blue'>粤</text>
+      </view>
+      <view>
+        <text class='area' bindtap='selectArea' style ='color:blue'>琼</text>
+      </view>
+      <view>
+        <text class='area' bindtap='selectArea' style ='color:blue'>甘</text>
+      </view>
+      <view>
+        <text class='area' bindtap='selectArea' style ='color:blue'>陕</text>
+      </view>
+      <view>
+        <text class='area' bindtap='selectArea' style ='color:blue'>黔</text>
+      </view>
+      <view>
+        <text class='area' bindtap='selectArea' style ='color:blue'>滇</text>
+      </view>
+      <view>
+        <text class='area' bindtap='selectArea' style ='color:blue'>川</text>
+      </view>
+    </view>
+</action-sheet>

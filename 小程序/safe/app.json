@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/index/index",
+    "pages/agreement/agreement",
+    "pages/mine/mine",
+    "pages/warm/warm",
+    "pages/hire/hire",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#f66e26",
+    "navigationBarBackgroundColor": "#f66e26",
+    "navigationBarTitleText": "车险分期",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#f66e26",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "车险分期",
+        "iconPath": "res/images/home_1.png",
+        "selectedIconPath": "res/images/home.png"
+      },
+      {
+        "pagePath": "pages/warm/warm",
+        "text": "暖心服务",
+        "iconPath": "res/images/warm_1.png",
+        "selectedIconPath": "res/images/warm.png"
+      },
+      {
+        "pagePath": "pages/hire/hire",
+        "text": "汽车租赁",
+        "iconPath": "res/images/hire_1.png",
+        "selectedIconPath": "res/images/hire.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "res/images/mine_1.png",
+        "selectedIconPath": "res/images/mine.png"
+      }
+    ]
+  }
+}
